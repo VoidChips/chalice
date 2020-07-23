@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(253, 142, 225);
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.3rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 0.01rem;
+}
+
+iframe {
+    width: 30rem;
+    height: 18rem;
+}
+
+.quote {
+    font-weight: lighter;
+    color: rgb(90, 90, 90);
+    padding: 0 1rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-columns: 7% 86% 7%;
+    }
+
+    iframe {
+        width: 20rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    iframe {
+        width: 15rem;
+        height: 10rem;
+    }
+}
